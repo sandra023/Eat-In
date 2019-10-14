@@ -1,0 +1,361 @@
+*{
+  box-sizing: border-box
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito', sans-serif;
+  background-image: url('/images/background4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.accountIcon{
+  margin-left: 70vw;
+  margin-top: 21vh;
+  margin-right: 40vw;
+  height: 50px;
+  width: auto;
+  display: block;
+}
+.loginLogo{
+  /* margin-top: 2vh */
+}
+.div3{
+  margin: 0;
+}
+.frontPage{
+  margin-top: 35vh
+}
+.frontPageButtons{
+  margin-top: 10vh
+}
+.button1, .button2{
+  height: 5vh;
+  border-radius: 5px;
+  width: 20vw;
+  margin: 5px
+}
+.button1{
+  margin-top: 5vh
+}
+.logo{
+  width: 42vw
+}
+.textBox{
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 4vh;
+  width: 15vw;
+  margin: 5px;
+}
+.registerTitle{
+  font-size: 80px;
+  margin-top: 1vh;
+  margin-bottom: 0;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+li {
+  margin-left: 0;
+  margin: 10px;
+  
+}
+.ingredient {
+  width: 40%;
+  padding: 0px;
+  margin: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+  display: flex
+}
+
+.recipe{
+  padding: 5px;
+  box-shadow: 0 0 50px black;
+  margin-right: 25vw;
+  margin-left: 25vw;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 920px
+}
+
+.recipeContainer{
+  text-align: center;
+}
+.ingredients{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+}
+.instructions{
+  padding: 20px
+}
+.img {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 85%
+}
+.buttonContainer {
+  margin-top: 5vh;
+  margin-bottom: 20vh;
+}
+.button{
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  width: 30vw;
+  height: 10vh;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.favoritesButton {
+  cursor: pointer;
+  float: right;
+  border: none;
+  margin-right: 10px;
+  background-color: white
+}
+
+.homeButton {
+  cursor: pointer;
+  float: left;
+  border: none;
+  margin-left: 10px;
+  background-color: white
+}
+
+.register, .loginModal, .editInfo{
+  margin-top: 300px;
+  font-size: 25px;
+  background-color: rgba(255,255,255, .8);
+  display: inline-block;
+  border-radius: 10px;
+  width: 40vw;
+  height: 50vh
+
+}
+.login{
+  /* margin-top: 5vh; */
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  height: 3.5vh;
+  width: 8vw;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.recipeTitle{
+  margin: 0 auto;
+  width: 80%;
+}
+.recipeHeader{
+  text-align: center
+}
+@media screen and (max-width: 1200px){
+  .img{
+    width: 85%
+  }
+.recipe{
+  width: 70vw;
+  margin-left: 15vw
+}
+.accountIcon {
+  margin-left: 68vw;
+  margin-top: 18vh;   
+}
+}
+@media screen and (max-width: 1000px) {
+  .recipe {
+    margin-left: 10vw;
+    margin-right: 10vw
+  }
+  .button{
+    font-size: 35px
+  }
+  .img{
+    width: 85%
+  }
+  .loginLogo{
+    width: 35vw;
+  }
+  .loginModal{
+    margin-top: 30vh
+  }
+  .accountIcon {
+    margin-left: 66vw;
+    margin-top: 15vh;   
+  }
+  .editInfo{
+    margin-top: 30vh;
+    height: 60vh
+  }
+  .editHeader{
+    margin-top: 8vh;
+    font-size: 40px
+  }
+  .textBox{
+    width: 23vw
+  }
+  .login{
+  width: 12vw;
+  font-size: 15px
+  }
+}
+@media screen and (max-width: 750px) {
+  .body{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  .registerTitle{
+    margin-top: 7vh
+  }
+  .recipe {
+    margin-left: 10vw;
+    margin-right: 10vw
+  }
+  .img{
+    width: 85%
+  }
+  .button{
+    width: 40vw
+  }
+  .loginModal, .register{
+    margin-top: 25vh;
+    height: 45vh
+  }
+  .accountIcon {
+    margin-left: 66vw;
+    margin-top: 12vh;   
+  }
+  .editInfo{
+    margin-top: 22vh;
+    height: 60vh
+  }
+  .editHeader{
+    margin-top: 8vh;
+    font-size: 40px
+  }
+  .textBox{
+    width: 28vw;
+    font-size: 15px
+  }
+  .login{
+  width: 15vw;
+  font-size: 15px
+  }
+
+}
+@media screen and (max-width: 650px) {
+  body{
+    height: 100%;
+    background-image: url('/images/smallBackground.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+  }
+  .button{
+    font-size: 30px;
+    width: 80vw; 
+  }
+  .logo{
+    width: 65vw
+  }
+  .ingredients{
+    padding: 0;
+  }
+  .instructions {
+    padding: 0
+  }
+  .recipe {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 92vw;
+    margin-bottom: 20px;
+    margin-top: 15px
+  }
+  .img {
+    width: 100%; 
+    height: auto
+  }
+  .content{
+    width: 65vw;
+    margin-left: 5vw;
+    margin-top: 50px;    
+  }
+  .textBox{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 4vh;
+    width: 35vw;
+    margin: 5px;
+  }
+  .column{
+    font-size: 20px
+  }
+  .buttonContainer{
+    margin-top: 5vh;
+    margin-right: -2.5vw;
+  }
+  .loginModal, .register{
+    margin-left: 2.5vw;
+    margin-top: 20vh;
+    width: 75vw;
+    height: 60vh
+  }
+  .recipeTitle{
+    font-size: 20px
+  }
+  .registerTitle{
+    margin-top: 10vh;
+    font-size: 55px
+  }
+  .button1, .button2{
+    width: 45vw
+  }
+  .loginLogo{
+    width: 65vw
+  }
+  .accountIcon {
+    margin-left: 75vw;
+    margin-top: 10vh;   
+  }
+  .editInfo{
+    /* margin-top: 22vh;
+    height: 60vh */
+    margin-left: 2vw;
+    width: 65vw
+  }
+  .editHeader{
+    margin-top: 8vh;
+    font-size: 40px
+  }
+  .textBox{
+    width: 48vw;
+    font-size: 15px
+  }
+  .login{
+  margin-top: 5vh;
+  width: 25vw;
+  font-size: 15px
+  }
+
+
+} 

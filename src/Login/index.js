@@ -34,7 +34,7 @@ class Login extends Component {
         console.log("this.state.loginUser",this.state.loginUser)
         const validatedForm = this.validateForm()
         if(validatedForm){
-          const login = await fetch('http://localhost:8080/auth/login', {
+          const login = await fetch('https://eat-in-app.herokuapp.com/auth/login', {
               method: 'POST',
               credentials: 'include',
               body: JSON.stringify(this.state.loginUser),

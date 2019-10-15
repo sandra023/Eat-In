@@ -35,7 +35,7 @@ class User extends Component {
         console.log('user from delete route: ', this.state.currentUser)
 
         try{
-            const deleteRequest = await fetch ('http://localhost:8080/users/'+this.state.currentUser.id, {
+            const deleteRequest = await fetch ('https://eat-in-backend.herokuapp.com/users/'+this.state.currentUser.id, {
                 method: 'DELETE',
                 credentials: 'include'
             })
@@ -71,7 +71,7 @@ class User extends Component {
         console.log("this.state.currentUser", this.state.currentUser)
 
         try{
-            const editRequest = await fetch ('http://localhost:8080/users/'+this.state.currentUser.id, {
+            const editRequest = await fetch ('https://eat-in-backend.herokuapp.com/users/'+this.state.currentUser.id, {
                 method: 'PUT',
                 credentials: 'include',
                 body: JSON.stringify(this.state.userToEdit),

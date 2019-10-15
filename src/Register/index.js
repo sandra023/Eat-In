@@ -33,7 +33,7 @@ class Register extends Component {
         e.preventDefault();
         const validatedForm = this.validateForm()
         if(validatedForm){
-        const register = await fetch('https://eat-in-app.herokuapp.com/users', {
+        const register = await fetch('https://eat-in-backend.herokuapp.com/users', {
             method: 'POST',
             credentials: 'include',
             body: JSON.stringify(this.state.registrationUser),
